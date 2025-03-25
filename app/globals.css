@@ -22,3 +22,15 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.content-container {
+  width: 736px;
+  margin: 32px auto 80px;
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    width: 100%;
+    padding: 0 16px;
+  }
+}

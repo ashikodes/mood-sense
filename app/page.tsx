@@ -1,19 +1,14 @@
-function Summarizer() {
-  const handleSummarize = async () => {
-    const response = await fetch("http://localhost:8000/analyze-mood/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({  }),
-    });
-    const data = await response.json();
-  };
+import { Header } from "@/app/components/Header/Header";
+import { ThoughtCard } from "@/app/components/ThoughtCard/ThoughtCard";
 
+function Summarizer() {
   return (
-    <div>
-      
-    </div>
+    <>
+      <Header />
+      <div className="content-container">
+        <ThoughtCard />
+      </div>
+    </>
   );
 }
 
