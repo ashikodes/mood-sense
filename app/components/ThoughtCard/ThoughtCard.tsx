@@ -1,3 +1,4 @@
+import { Input } from "@/app/components/Input/Input";
 import "./ThoughtCard.scss";
 
 export function ThoughtCard() {
@@ -8,6 +9,10 @@ export function ThoughtCard() {
         Type three sentences that come to your mind right now. We'll analyze
         your mood based on your expressions.
       </p>
+      <Input label="first thought" />
+      <Input label="second thought" />
+      <Input label="third thought" />
+      <button className="card-button">Analyze My Mood</button>
     </div>
   );
 }

@@ -13,7 +13,7 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 29px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-align: left;
   margin-bottom: 28px;
 }
@@ -24,8 +24,24 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-align: left;
   margin-bottom: 32px;
   line-height: 1.5;
+}
+
+.card-button {
+  box-sizing: border-box;
+  border-radius: 8px;
+  background: rgb(79, 70, 229);
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0;
+  text-align: center;
+  width: 100%;
+  padding: 1rem 0;
+  cursor: pointer;
 }
