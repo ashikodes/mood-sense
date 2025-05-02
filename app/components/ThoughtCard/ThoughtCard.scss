@@ -5,6 +5,7 @@
     0px 4px 6px 0px rgba(0, 0, 0, 0.1);
   background: rgb(255, 255, 255);
   padding: 33px;
+  position: relative;
 }
 
 .card-title {
@@ -44,4 +45,19 @@
   width: 100%;
   padding: 1rem 0;
   cursor: pointer;
+
+  &:disabled {
+    background: rgb(79, 70, 229, 0.4);
+    color: rgb(255, 255, 255);
+    cursor: not-allowed;
+  }
+}
+
+.mood-loader {
+  background: rgb(79, 70, 229);
+  width: 6rem;
+  height: 6rem;
+  top: calc(50% - 3rem);
+  left: calc(50% - 3rem);
+  position: absolute;
 }

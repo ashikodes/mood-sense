@@ -1,6 +1,7 @@
 .input-container {
   display: block;
   margin-bottom: 2rem;
+  position: relative;
 }
 
 .input-container label {
@@ -22,7 +23,6 @@
   box-sizing: border-box;
   border: 1px solid rgb(229, 231, 235);
   border-radius: 8px;
-  color: rgb(173, 174, 188);
   font-family: Inter;
   font-size: 16px;
   font-weight: 400;
@@ -33,4 +33,29 @@
   resize: none;
   padding: 1rem .5rem;
   width: 100%;
+
+  &::placeholder {
+    color: rgb(173, 174, 188);
+  }
+
+  &:disabled {
+    background: rgb(229, 231, 235);
+    color: rgb(156, 163, 175);
+    cursor: not-allowed;
+  }
+
+  &.input-error, &.input-error:focus {
+    outline: 1px solid rgb(239, 68, 68);
+  }
+}
+
+.input-container .error-desc {
+  color: rgb(239, 68, 68);
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  position: absolute;
+  bottom: -12px;
+  left: 0;
 }

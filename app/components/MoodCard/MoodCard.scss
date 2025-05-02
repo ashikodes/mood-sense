@@ -1,0 +1,114 @@
+.mood-card {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-shrink: 0;
+  border-radius: 0.75rem;
+  border: 0px solid #e5e7eb;
+  background: #fff;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1),
+    0px 10px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.mood-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5rem;
+}
+
+.mood-card-title {
+  color: #1f2937;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem; /* 100% */
+}
+
+.mood-card-subtitle {
+  color: #4b5563;
+  text-align: center;
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem; /* 100% */
+}
+
+.mood-card-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.mood-card-emotion {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  background: #eef2ff;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  width: 33%;
+  min-height: 6rem;
+  padding: 1rem;
+
+  h4 {
+    color: #1f2937;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  p {
+    color: #4f46e5;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+
+.mood-card-notes {
+  display: flex;
+  height: 10.125rem;
+  padding: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.75rem;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  background: #f9fafb;
+
+  h4 {
+    color: #1f2937;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  p {
+    color: #4b5563;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}

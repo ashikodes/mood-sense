@@ -26,6 +26,9 @@ body {
 .content-container {
   width: 736px;
   margin: 32px auto 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 @media (max-width: 768px) {
