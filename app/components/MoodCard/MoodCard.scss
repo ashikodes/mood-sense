@@ -1,5 +1,4 @@
 .mood-card {
-  display: flex;
   padding: 2rem;
   flex-direction: column;
   justify-content: center;
@@ -86,6 +85,7 @@
   display: flex;
   height: 10.125rem;
   padding: 1.5rem;
+  min-width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
