@@ -36,7 +36,6 @@ export function ThoughtCard() {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm<FormValues>({
     resolver: yupResolver(schema),
@@ -88,7 +87,7 @@ export function ThoughtCard() {
           >
             <h2 className="card-title">Share Your Thoughts</h2>
             <p className="card-subtitle">
-              Type three sentences that come to your mind right now. We'll
+              Type three sentences that come to your mind right now. We&#39;ll
               analyze your mood based on your expressions.
             </p>
             <form onSubmit={handleSubmit(onSubmit)}>
